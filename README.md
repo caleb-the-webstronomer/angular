@@ -2,9 +2,7 @@
 
 ## Angular Showcase App By Caleb the Webstronomer
 
-Visit Site[1]
-
-[1]: https://kaleb-angular.netlify.com/?target=_blank
+[Visit Site](https://kaleb-angular.netlify.com target="\_blank)
 
 ### Using:
 
