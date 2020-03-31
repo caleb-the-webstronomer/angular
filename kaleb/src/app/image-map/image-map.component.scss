@@ -1,0 +1,30 @@
+.cls-1 {
+  fill: #680925;
+}
+
+.cls-1,
+.cls-2 {
+  opacity: 0.3;
+}
+
+.cls-2 {
+  fill: #82c341;
+}
+
+.cls-3 {
+  font-size: 60px;
+  fill: #fff;
+  font-family: Avenir-Heavy, Avenir;
+  font-weight: 800;
+}
+
+.cls-4 {
+  letter-spacing: -0.11em;
+}
+
+tspan {
+  display: block;
+  text-shadow: 1px 4px 6px gray, 0 0 0 #66303a, 1px 4px 6px gray;
+  fill: orange;
+  font-size: 1.4em;
+}
