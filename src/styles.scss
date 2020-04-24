@@ -1,0 +1,47 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Comfortaa" !important;
+  background-color: #eee;
+}
+
+.landing {
+  padding-top: 20vh;
+  text-align: center;
+  .box {
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 3px 3px 8px #ddd, -5px -5px 8px #fff !important;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  h3 {
+    display: block;
+    color: #c60025;
+    letter-spacing: 2.4px;
+  }
+
+  h5 {
+    font-weight: 300;
+    color: #333333;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+  }
+}
