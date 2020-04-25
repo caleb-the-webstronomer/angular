@@ -11,11 +11,13 @@
 }
 
 html,
-body {
+body,
+.light-theme,
+.dark-theme {
   margin: 0;
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
   font-family: "Comfortaa" !important;
-  background-color: #eee;
 }
 
 .landing {
@@ -25,7 +27,7 @@ body {
     width: 300px;
     padding: 20px;
     margin: auto;
-    box-shadow: 3px 3px 8px #ddd, -5px -5px 8px #fff !important;
+    border-radius: 10px;
   }
 
   img {
@@ -34,13 +36,11 @@ body {
 
   h3 {
     display: block;
-    color: #c60025;
     letter-spacing: 2.4px;
   }
 
   h5 {
     font-weight: 300;
-    color: #333333;
     letter-spacing: 2px;
     font-size: 0.8em;
   }

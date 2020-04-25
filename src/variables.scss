@@ -1,3 +1,30 @@
-$col1: #111111dd;
-$col2: #fff;
-$col3: #f0bc4c;
+@import "~@angular/material/theming";
+
+$custom-typography: mat-typography-config(
+  $font-family: "Comfortaa",
+);
+
+@include mat-core($custom-typography);
+
+@mixin theme($theme-name, $bg, $col, $tcol) {
+  $box-shadow: 3px 3px 8px darken($bg, 10%), -5px -5px 8px lighten($bg, 10%) !important;
+  .#{$theme-name} {
+    background-color: $bg;
+    color: $col;
+
+    .box,
+    .buttt {
+      box-shadow: $box-shadow;
+    }
+
+    h3 {
+      color: $tcol;
+    }
+    h5 {
+      color: $col;
+    }
+  }
+}
+
+@include theme(light-theme, #eeeeee, #222222, #c60025);
+@include theme(dark-theme, #333333, #eeeeee, #ed001f);
