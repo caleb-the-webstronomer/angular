@@ -9,7 +9,6 @@ import { Component } from "@angular/core";
         <h3>kaleb</h3>
         <h5>CALEB THE WEBSTRONOMER ANGULAR SHOWCASE</h5>
       </div>
-      <div class="polls"></div>
     </div>
   `,
   styles: [""],

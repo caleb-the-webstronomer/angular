@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Scully 0.0.0">
+  <meta charset="utf-8">
+  <title>Ng Kaleb :: Angular Showcase</title>
+  <base href="./">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FAVICONS  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" crossorigin="use-credentials" href="./favicon/site.webmanifest">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#c60025">
+  <meta name="msapplication-TileColor" content="#ffd0d0">
+  <meta name="theme-color" content="#ffd0d0">
+
+  <!-- FONTS && CSS  -->
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous">
+<style>.light-theme {
+  background-color: #eeeeee;
+  color: #222222;
+}
+.light-theme .box,
+.light-theme .buttt {
+  box-shadow: 3px 3px 8px #d5d5d5, -5px -5px 8px white !important;
+}
+.light-theme h3 {
+  color: #c60025;
+}
+.light-theme h5 {
+  color: #222222;
+}
+.dark-theme {
+  background-color: #333333;
+  color: #eeeeee;
+}
+.dark-theme .box,
+.dark-theme .buttt {
+  box-shadow: 3px 3px 8px #1a1a1a, -5px -5px 8px #4d4d4d !important;
+}
+.dark-theme h3 {
+  color: #ff2d54;
+}
+.dark-theme h5 {
+  color: #eeeeee;
+}
+* {
+  box-sizing: border-box;
+  outline: none !important;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body,
+.light-theme,
+.dark-theme {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Comfortaa" !important;
+}
+.landing {
+  padding-top: 20vh;
+  text-align: center;
+}
+.landing .box {
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 10px;
+}
+.landing img {
+  width: 150px;
+}
+.landing h3 {
+  display: block;
+  letter-spacing: 2.4px;
+}
+.landing h5 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9rYXB0YWludGkvRG9jdW1lbnRzLzIvY2FsZWIvYW5ndWxhci9zcmMvdmFyaWFibGVzLnNjc3MiLCJzdHlsZXMuc2NzcyIsIi9Vc2Vycy9rYXB0YWludGkvRG9jdW1lbnRzLzIvY2FsZWIvYW5ndWxhci9zcmMvc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBS0U7RUFDRSx5QkFpQndCO0VBaEJ4QixjQWdCaUM7QUNwQnJDO0FETUk7O0VBRUUsK0RBUFM7QUNHZjtBRE9JO0VBQ0UsY0FmRTtBQ1VSO0FET0k7RUFDRSxjQUsrQjtBQ1ZyQztBRFJFO0VBQ0UseUJBa0J1QjtFQWpCdkIsY0FpQmdDO0FDTnBDO0FEVEk7O0VBRUUsaUVBUFM7QUNrQmY7QURSSTtFQUNFLGNBZEU7QUN3QlI7QURSSTtFQUNFLGNBTThCO0FDSXBDO0FDMUJBO0VBQ0Usc0JBQUE7RUFDQSx3QkFBQTtBRDZCRjtBQzFCQTs7RUFFRSxzQkFBQTtBRDZCRjtBQzFCQTs7OztFQUlFLFNBQUE7RUFDQSxhQUFBO0VBQ0EsWUFBQTtFQUNBLG1DQUFBO0FENkJGO0FDMUJBO0VBQ0UsaUJBQUE7RUFDQSxrQkFBQTtBRDZCRjtBQzVCRTtFQUNFLFlBQUE7RUFDQSxhQUFBO0VBQ0EsWUFBQTtFQUNBLG1CQUFBO0FEOEJKO0FDM0JFO0VBQ0UsWUFBQTtBRDZCSjtBQzFCRTtFQUNFLGNBQUE7RUFDQSxxQkFBQTtBRDRCSjtBQ3pCRTtFQUNFLGdCQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtBRDJCSiIsImZpbGUiOiJzdHlsZXMuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiRjb2xybDogI2M2MDAyNTtcbiRjb2xyZDogbGlnaHRlbigkY29scmwsIDIwJSk7XG5cbkBtaXhpbiB0aGVtZSgkdGhlbWUtbmFtZSwgJGJnLCAkY29sLCAkdGNvbCkge1xuICAkYm94LXNoYWRvdzogM3B4IDNweCA4cHggZGFya2VuKCRiZywgMTAlKSwgLTVweCAtNXB4IDhweCBsaWdodGVuKCRiZywgMTAlKSAhaW1wb3J0YW50O1xuICAuI3skdGhlbWUtbmFtZX0ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICRiZztcbiAgICBjb2xvcjogJGNvbDtcblxuICAgIC5ib3gsXG4gICAgLmJ1dHR0IHtcbiAgICAgIGJveC1zaGFkb3c6ICRib3gtc2hhZG93O1xuICAgIH1cblxuICAgIGgzIHtcbiAgICAgIGNvbG9yOiAkdGNvbDtcbiAgICB9XG4gICAgaDUge1xuICAgICAgY29sb3I6ICRjb2w7XG4gICAgfVxuICB9XG59XG5cbkBpbmNsdWRlIHRoZW1lKGxpZ2h0LXRoZW1lLCAjZWVlZWVlLCAjMjIyMjIyLCAkY29scmwpO1xuQGluY2x1ZGUgdGhlbWUoZGFyay10aGVtZSwgIzMzMzMzMywgI2VlZWVlZSwgJGNvbHJkKTtcbiIsIi5saWdodC10aGVtZSB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNlZWVlZWU7XG4gIGNvbG9yOiAjMjIyMjIyO1xufVxuLmxpZ2h0LXRoZW1lIC5ib3gsXG4ubGlnaHQtdGhlbWUgLmJ1dHR0IHtcbiAgYm94LXNoYWRvdzogM3B4IDNweCA4cHggI2Q1ZDVkNSwgLTVweCAtNXB4IDhweCB3aGl0ZSAhaW1wb3J0YW50O1xufVxuLmxpZ2h0LXRoZW1lIGgzIHtcbiAgY29sb3I6ICNjNjAwMjU7XG59XG4ubGlnaHQtdGhlbWUgaDUge1xuICBjb2xvcjogIzIyMjIyMjtcbn1cblxuLmRhcmstdGhlbWUge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMzMzMzMzO1xuICBjb2xvcjogI2VlZWVlZTtcbn1cbi5kYXJrLXRoZW1lIC5ib3gsXG4uZGFyay10aGVtZSAuYnV0dHQge1xuICBib3gtc2hhZG93OiAzcHggM3B4IDhweCAjMWExYTFhLCAtNXB4IC01cHggOHB4ICM0ZDRkNGQgIWltcG9ydGFudDtcbn1cbi5kYXJrLXRoZW1lIGgzIHtcbiAgY29sb3I6ICNmZjJkNTQ7XG59XG4uZGFyay10aGVtZSBoNSB7XG4gIGNvbG9yOiAjZWVlZWVlO1xufVxuXG4qIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgb3V0bGluZTogbm9uZSAhaW1wb3J0YW50O1xufVxuXG4qOmJlZm9yZSxcbio6YWZ0ZXIge1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xufVxuXG5odG1sLFxuYm9keSxcbi5saWdodC10aGVtZSxcbi5kYXJrLXRoZW1lIHtcbiAgbWFyZ2luOiAwO1xuICBoZWlnaHQ6IDEwMHZoO1xuICB3aWR0aDogMTAwdnc7XG4gIGZvbnQtZmFtaWx5OiBcIkNvbWZvcnRhYVwiICFpbXBvcnRhbnQ7XG59XG5cbi5sYW5kaW5nIHtcbiAgcGFkZGluZy10b3A6IDIwdmg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5sYW5kaW5nIC5ib3gge1xuICB3aWR0aDogMzAwcHg7XG4gIHBhZGRpbmc6IDIwcHg7XG4gIG1hcmdpbjogYXV0bztcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cbi5sYW5kaW5nIGltZyB7XG4gIHdpZHRoOiAxNTBweDtcbn1cbi5sYW5kaW5nIGgzIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGxldHRlci1zcGFjaW5nOiAyLjRweDtcbn1cbi5sYW5kaW5nIGg1IHtcbiAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgbGV0dGVyLXNwYWNpbmc6IDJweDtcbiAgZm9udC1zaXplOiAwLjhlbTtcbn0iLCJAaW1wb3J0IFwiLi92YXJpYWJsZXMuc2Nzc1wiO1xuXG4qIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgb3V0bGluZTogbm9uZSAhaW1wb3J0YW50O1xufVxuXG4qOmJlZm9yZSxcbio6YWZ0ZXIge1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xufVxuXG5odG1sLFxuYm9keSxcbi5saWdodC10aGVtZSxcbi5kYXJrLXRoZW1lIHtcbiAgbWFyZ2luOiAwO1xuICBoZWlnaHQ6IDEwMHZoO1xuICB3aWR0aDogMTAwdnc7XG4gIGZvbnQtZmFtaWx5OiBcIkNvbWZvcnRhYVwiICFpbXBvcnRhbnQ7XG59XG5cbi5sYW5kaW5nIHtcbiAgcGFkZGluZy10b3A6IDIwdmg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgLmJveCB7XG4gICAgd2lkdGg6IDMwMHB4O1xuICAgIHBhZGRpbmc6IDIwcHg7XG4gICAgbWFyZ2luOiBhdXRvO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gIH1cblxuICBpbWcge1xuICAgIHdpZHRoOiAxNTBweDtcbiAgfVxuXG4gIGgzIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBsZXR0ZXItc3BhY2luZzogMi40cHg7XG4gIH1cblxuICBoNSB7XG4gICAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgICBsZXR0ZXItc3BhY2luZzogMnB4O1xuICAgIGZvbnQtc2l6ZTogMC44ZW07XG4gIH1cbn1cbiJdfQ== */</style><style></style><style>mat-button-toggle[_ngcontent-llg-c1] {
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.switch[_ngcontent-llg-c1] {
+  padding-top: 25px;
+  text-align: center;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9rYXB0YWludGkvRG9jdW1lbnRzLzIvY2FsZWIvYW5ndWxhci9zcmMvYXBwL3puaXBwZXRzL3dpZGdldHMvdGhlbWVyL3RoZW1lci5zY3NzIiwic3JjL2FwcC96bmlwcGV0cy93aWRnZXRzL3RoZW1lci90aGVtZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFlBQUE7RUFDQSxtQkFBQTtBQ0NGOztBREVBO0VBQ0UsaUJBQUE7RUFDQSxrQkFBQTtBQ0NGIiwiZmlsZSI6InNyYy9hcHAvem5pcHBldHMvd2lkZ2V0cy90aGVtZXIvdGhlbWVyLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtYnV0dG9uLXRvZ2dsZSB7XG4gIG1hcmdpbjogMTBweDtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cblxuLnN3aXRjaCB7XG4gIHBhZGRpbmctdG9wOiAyNXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4iLCJtYXQtYnV0dG9uLXRvZ2dsZSB7XG4gIG1hcmdpbjogMTBweDtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cblxuLnN3aXRjaCB7XG4gIHBhZGRpbmctdG9wOiAyNXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59Il19 */</style><style>.mat-button-toggle-standalone,.mat-button-toggle-group{position:relative;display:inline-flex;flex-direction:row;white-space:nowrap;overflow:hidden;border-radius:2px;-webkit-tap-highlight-color:transparent}.cdk-high-contrast-active .mat-button-toggle-standalone,.cdk-high-contrast-active .mat-button-toggle-group{outline:solid 1px}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,.mat-button-toggle-group-appearance-standard{border-radius:4px}.cdk-high-contrast-active .mat-button-toggle-standalone.mat-button-toggle-appearance-standard,.cdk-high-contrast-active .mat-button-toggle-group-appearance-standard{outline:0}.mat-button-toggle-vertical{flex-direction:column}.mat-button-toggle-vertical .mat-button-toggle-label-content{display:block}.mat-button-toggle{white-space:nowrap;position:relative}.mat-button-toggle .mat-icon svg{vertical-align:top}.mat-button-toggle.cdk-keyboard-focused .mat-button-toggle-focus-overlay{opacity:1}.cdk-high-contrast-active .mat-button-toggle.cdk-keyboard-focused .mat-button-toggle-focus-overlay{opacity:.5}.mat-button-toggle-appearance-standard:not(.mat-button-toggle-disabled):hover .mat-button-toggle-focus-overlay{opacity:.04}.mat-button-toggle-appearance-standard.cdk-keyboard-focused:not(.mat-button-toggle-disabled) .mat-button-toggle-focus-overlay{opacity:.12}.cdk-high-contrast-active .mat-button-toggle-appearance-standard.cdk-keyboard-focused:not(.mat-button-toggle-disabled) .mat-button-toggle-focus-overlay{opacity:.5}@media(hover: none){.mat-button-toggle-appearance-standard:not(.mat-button-toggle-disabled):hover .mat-button-toggle-focus-overlay{display:none}}.mat-button-toggle-label-content{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:inline-block;line-height:36px;padding:0 16px;position:relative}.mat-button-toggle-appearance-standard .mat-button-toggle-label-content{line-height:48px;padding:0 12px}.mat-button-toggle-label-content>*{vertical-align:middle}.mat-button-toggle-focus-overlay{border-radius:inherit;pointer-events:none;opacity:0;top:0;left:0;right:0;bottom:0;position:absolute}.mat-button-toggle-checked .mat-button-toggle-focus-overlay{border-bottom:solid 36px}.cdk-high-contrast-active .mat-button-toggle-checked .mat-button-toggle-focus-overlay{opacity:.5;height:0}.cdk-high-contrast-active .mat-button-toggle-checked.mat-button-toggle-appearance-standard .mat-button-toggle-focus-overlay{border-bottom:solid 48px}.mat-button-toggle .mat-button-toggle-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}.mat-button-toggle-button{border:0;background:none;color:inherit;padding:0;margin:0;font:inherit;outline:none;width:100%;cursor:pointer}.mat-button-toggle-disabled .mat-button-toggle-button{cursor:default}.mat-button-toggle-button::-moz-focus-inner{border:0}
+</style><script charset="utf-8" src="modules-landing-landing-ngfactory-es2015.js"></script><script>window['ScullyIO']='generated';</script></head>
+
+<body scully-version="0.0.0">
+  <kaleb _nghost-llg-c0="" ng-version="9.1.3"><div _ngcontent-llg-c0="" class="light-theme"><div _ngcontent-llg-c0="" class="container"><themer _ngcontent-llg-c0="" _nghost-llg-c1=""><div _ngcontent-llg-c1="" class="switch"><mat-button-toggle-group _ngcontent-llg-c1="" class="mat-button-toggle-group mat-button-toggle-group-appearance-standard ng-untouched ng-pristine ng-valid" role="group" aria-disabled="false"><mat-button-toggle _ngcontent-llg-c1="" class="buttt mat-button-toggle mat-button-toggle-appearance-standard" value="dark-theme" ng-reflect-value="dark-theme" tabindex="-1" id="mat-button-toggle-1"><button class="mat-button-toggle-button mat-focus-indicator" type="button" id="mat-button-toggle-1-button" tabindex="0" aria-pressed="false" name="mat-button-toggle-group-0"><div class="mat-button-toggle-label-content">Dark</div></button><div class="mat-button-toggle-focus-overlay"></div><div class="mat-button-toggle-ripple mat-ripple" matripple="" ng-reflect-disabled="false" ng-reflect-trigger="[object HTMLButtonElement]"></div></mat-button-toggle><mat-button-toggle _ngcontent-llg-c1="" class="buttt mat-button-toggle mat-button-toggle-appearance-standard" value="light-theme" ng-reflect-value="light-theme" tabindex="-1" id="mat-button-toggle-2"><button class="mat-button-toggle-button mat-focus-indicator" type="button" id="mat-button-toggle-2-button" tabindex="0" aria-pressed="false" name="mat-button-toggle-group-0"><div class="mat-button-toggle-label-content">Light</div></button><div class="mat-button-toggle-focus-overlay"></div><div class="mat-button-toggle-ripple mat-ripple" matripple="" ng-reflect-disabled="false" ng-reflect-trigger="[object HTMLButtonElement]"></div></mat-button-toggle></mat-button-toggle-group></div></themer><router-outlet _ngcontent-llg-c0=""></router-outlet><landing-home _nghost-llg-c3=""><div _ngcontent-llg-c3="" class="landing"><div _ngcontent-llg-c3="" class="box"><img _ngcontent-llg-c3="" alt="" src="/assets/logo.png"><h3 _ngcontent-llg-c3="">kaleb</h3><h5 _ngcontent-llg-c3="">CALEB THE WEBSTRONOMER ANGULAR SHOWCASE</h5></div></div></landing-home></div></div></kaleb>
+<script id="ScullyIO-transfer-state"></script><script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule="" defer=""></script><script src="polyfills-es5.js" nomodule="" defer=""></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule="" defer=""></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule="" defer=""></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule="" defer=""></script>
+
+</body></html>
